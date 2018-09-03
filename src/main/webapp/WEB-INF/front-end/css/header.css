@@ -1,0 +1,47 @@
+/*
+说明：首页的样式
+兼容性：IE8+ 主流浏览器
+作者：郭木俊
+编写时间：2017-12-19
+修改时间：2017-12-26
+二次修改时间: 2018-01-03
+*/
+body{
+	background-color: rgb(247,247,247);
+}
+div.major_intro{
+	margin: 2px auto;
+	width: 100%;
+	padding: 30px 50px 48px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+div.introTitle{
+	margin: 0 auto;
+}
+div.introTitle h1{
+	font-size: 28px;
+	line-height: 1.5em;
+	color:#2B2B29;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+}
+div.introTitle p{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10px;
+	color:#7E756C;
+}
+div.majLogo{
+	margin: 0 auto;
+	margin-top: 30px;
+}
+ul.logolist{
+	display: flex;
+	flex-direction:row;
+}
+ul.logolist li{
+	height:120px;
+	padding: 0 5px;
+}

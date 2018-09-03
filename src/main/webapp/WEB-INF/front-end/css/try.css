@@ -1,0 +1,150 @@
+
+body{
+	background-color: rgb(247,247,247);
+}
+.header{
+	position: absolute;
+	top:0;
+	background-color: #2B2B29;
+	height: 70px;
+	width: 100%;
+}
+div.logo{
+	margin-bottom: 7px;
+}
+div.logo>img{
+	width: 50px;height: 50px;float: left;
+}
+div.webname h1{
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+div.webname h1 label{
+	color:white;
+}
+div.login{
+	float: right;
+	margin-right: 100px;
+	margin-top: 20px;
+}
+.hnav{
+	margin-top: 70px;
+	width: 100%;
+	background-color: #7E756C;
+	height: 50px;
+}
+div.banner{
+	position: relative;
+	z-index: -1;	
+	cursor: pointer;
+}
+ul.hdnav{
+	margin: 0 auto;
+	height: 100%;
+}
+ul.hdnav li{
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	color:white;
+}
+ul.hdnav li label{
+	font-weight: normal;
+	font-size: 20px;
+	background-color: #5E554C;
+	border-right: 30px;
+	width: 250px;
+	margin-bottom: 0;
+}
+ul.hdnav li a{
+	display: block;
+	width: 100px;
+	line-height: 50px;
+	color:#fff;
+	background-color:#7E756C;
+	font-size: 16px;
+	font-family: "Microsoft YaHei" "SimSun";
+}
+li.lhidden{
+	width: 220px;
+}
+ul.hdnav li a:hover{
+	text-decoration: none;
+	color:white;
+	background-color: #2B2B29;
+}
+ul.hdnav{
+	display:flex;
+	justify-content: center;
+}
+div.sdymod{
+	/*height: 321px;*/
+	/*height: 100%;*/
+}
+div.sdymod ul.project{
+	/*position: absolute;*/
+	height: 100%;
+	width:250px;
+	display: flex;
+	flex-direction: column;
+}
+div.sdymod ul.project li{
+	background-color: #333;
+	/*border-bottom: 1px #ededed solid;*/
+	cursor: pointer;
+	margin-bottom: 1px;
+}
+div.webname{
+
+	text-align: left;
+}
+ul.project li{
+	text-align: center;
+}
+ul.project li:hover{
+	font-size: 24px;
+	font-weight: bold;
+}
+/*div.major_intro{}*/
+div.major_intro{
+	margin: 2px auto;
+	width: 100%;
+	padding: 30px 50px 48px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+div.introTitle{
+	margin: 0 auto;
+}
+div.introTitle h1{
+	font-size: 28px;
+	line-height: 1.5em;
+	color:#2B2B29;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+}
+div.introTitle p{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10px;
+	color:#7E756C;
+}
+div.majLogo{
+	margin: 0 auto;
+	margin-top: 30px;
+}
+ul.logolist{
+	display: flex;
+	flex-direction:row;
+}
+ul.logolist li{
+	padding: 0 5px;
+}
+div.footer{
+	position: absolute;
+	bottom: 0;
+	/*bottom: -450px;*/
+	width: 100%;
+}

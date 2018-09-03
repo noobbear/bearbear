@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			.header{
+				position: fixed;
+				top: 0;
+				left:0;
+				right: 0;
+				z-index: 1003;
+				/*width: inherit;*/
+				height: 50px;
+				background-color: #2b2b29;
+			}
+			.hdcontain{
+				margin: 0 auto;
+				width: 1000px ;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+			}
+			.h_nav{
+				display: flex;
+				flex-direction: row;
+				height: 100%;
+				margin-top: 5px;
+				margin-right: 10px;
+			}
+			.h_nav img{
+				width: 40px;
+				height: 40px;
+				margin-right: 10px;
+			}
+			.h_nav label{
+				margin-top: 10px;
+				color: white;
+				font-size: 24px;
+				/*margin-top: 20px;*/
+			}
+			.h_nav label span{
+				font-size: 20px;
+				color:#5E5E5E;
+			}
+			.out{
+				padding-top: 5px;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="/admin/css/bootstrap.css"/>
+	</head>
+	<body>
+		<div class="header" id="logined">
+			<div class="hdcontain">
+				<div class="h_nav">	
+					<img src="/admin/img/logo.png" alt="logo" />
+					<label>BearBear<span>&nbsp;.web</span></label>
+				</div>
+				<div id="Islogin">
+					<div class="out">
+						<a href="/login/adminlogout" class="btn btn-danger">退出&nbsp;<label class="glyphicon glyphicon-log-out"></label></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

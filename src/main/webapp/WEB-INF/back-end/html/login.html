@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="/admin/css/login.css" />
+</head>
+<body>
+	<div
+		style="text-align: center; margin: 50px 0; font: normal 14px/24px; color: #000000">
+		<h1>数据管理系统</h1>
+	</div>
+	<div class="htmleaf-container">
+		<div class="wrapper">
+			<div class="container">
+				<h1>Welcome</h1>
+
+				<div class="form">
+					<input type="text" placeholder="Usernum" name="num" id="num">
+					<input type="password" placeholder="Password" name="password"
+						id="password">
+					<button type="submit" id="login-button">Login</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/admin/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script>
+		$('#login-button').click(function(event) {
+			var data = new Object();
+			data.num = $("#num").val();
+			data.password = $("#password").val();			
+			 $.ajax({
+					async : "false",
+					url : "/login/adminlogin",
+					data : data,
+					dataType : "json",
+					type : "post",
+					success : function(user) {
+						console.log(user);
+						if (user != null && user.admin==1) {
+							event.preventDefault();
+							$('form').fadeOut(500);
+							$('.wrapper').addClass('form-success');
+							window.setTimeout("window.location.replace('/admin/html/index.html')",2000);
+						} else {
+								alert("登录失败，请确认管理员帐号是否存在或密码是否正确");
+								}
+						},
+					error:function(){
+						alert("error");
+					}
+					});
+
+		});
+	</script>
+</body>
+</html>

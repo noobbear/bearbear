@@ -1,0 +1,598 @@
+@charset "utf-8";
+/*
+ * 描述：bearbear网的主体样式
+ * 作者：郭木俊
+ * 创建时间：2017-12-27 9:00
+ * 修改时间：2018-01-03 9:18
+ */
+/*头部导航*/
+@media screen and (max-height: 720px) {
+	#footer {
+		position: relative;
+		top:720px;
+	}
+	
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left:0;
+	right: 0;
+	z-index: 1003;;
+	display: flex;
+	flex-direction: row;
+	width: inherit;
+	height: 50px;
+	background-color: #2b2b29;
+	overflow: hidden
+}
+/*#header{
+	height: 50px;
+}*/
+.hdcontain{
+	margin: 0 auto;
+	/*width: 1000px ;*/
+	display: flex;
+	flex-direction: row;
+}
+.h_nav{
+	display: flex;
+	flex-direction: row;
+	/*float: left;*/
+	height: 100%;
+	/*margin-left: 50px;*/
+	/*padding-left: 300px;*/
+	margin-top: 5px;
+}
+.h_nav img{
+	width: 30px;
+	height: 30px;
+	/*margin-bottom: 20px;*/
+	margin-right: 10px;
+}
+.h_nav label{
+	margin-top: 10px;
+	color: white;
+	font-size: 24px;
+	/*margin-top: 20px;*/
+}
+.h_nav label span{
+	font-size: 20px;
+	color:#5E5E5E;
+}
+.main_nav{
+	/*float: left;*/
+	margin-left: 20px;
+}
+.main_nav ul{
+	height: 50px;
+	margin-left: 15px;
+	display: flex;
+	flex-direction: row;
+}
+.main_nav ul li{
+	height: 100%;
+	text-align: center;
+	width: 90px;
+}
+.main_nav ul li a{
+	display: block;
+	border-left: 1px solid #2B2B29;
+	color: rgb(247,247,247);
+	height:100%;
+	line-height: 50px;
+	background-color: #2B2B29;
+}
+.main_nav ul li a:hover{
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #3c3c3c;
+}
+.register,.login{
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 820px;
+	height: 419px;
+	background-color: rgb(255,255,255);
+}
+#rg_footer,#lg_footer{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	/*height: 100px;*/
+}
+.userInfo{
+	margin-left: 100px;
+}
+.userInfo img{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	/*margin-bottom: 20px;*/
+	/*margin-right: 10px;*/
+}
+.userInfo .loginBtn a{
+	/*clear: both;*/
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 90px;
+	line-height: 40px;
+	display: block;
+	background: #4d4d4d;
+	color: white;
+	/*box-shadow:0px 0px 10px 3px #2B2B29 inset;*/
+}
+.userInfo .loginBtn a:hover{
+	text-decoration: none;
+	/*background: white;*/
+	font-size: 12px;
+	box-shadow: 5px 5px #2B2B18 inset;
+}
+.userInfo .loginBtn a:first-child{
+	position: relative;
+	border-top-left-radius:10%;
+	/*border-top-right-radius:5%;*/
+	border-bottom-left-radius:10%;
+	/*border-bottom-right-radius:5%;*/
+}
+.userInfo .loginBtn a:first-child label{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 5px;
+	height: inherit;
+	background: #2B2B29;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.userInfo .loginBtn a:last-child{
+	position: relative;
+	/*background: red;*/
+	/*border-top-left-radius:5%;*/
+	border-top-right-radius:10%;
+	/*border-bottom-left-radius:5%;*/
+	border-bottom-right-radius:10%;
+}
+.userInfo .loginBtn a:last-child label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: inherit;
+	background: #2B2B29;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.loginBtn{
+	/*float: right;*/
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	
+}
+.lgInfo #userImg{
+	display: inline-block;
+	margin-top: 5px;
+	/*background-image: url(../images/default.jpg);*/
+}
+.lgInfo #userImg a img{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+.lgInfo label a{
+	text-decoration: none;
+	margin-left: 10px;
+	line-height: inherit;
+	color:white;
+}
+.footer{
+	width: 100%;
+	/*position: absolute;*/
+	/*bottom:0;*/
+	margin: 0 auto;
+	font-size: 16px;
+	color: #41667c;
+	font-family: "Microsoft YaHei";
+	line-height: 1.5em;
+	text-align: center;
+	background-color: #2B2B29;
+	
+}
+.cl-effect-1 nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+.cl-effect-1 nav a:hover,
+.cl-effect-1 nav a:focus {
+	outline: none;
+}
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+.cl-effect-1 a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+.cl-effect-1 a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+.rgst_form,.log_form{
+	padding: 50px;
+	margin: 0 220px;
+}
+.rgst_form>p,.log_form>p{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.rgst_submit,.log_submit{
+	margin-right: 20px;
+}
+.rgst_submit>button>label,.log_submit>button>label{
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.rgst_reset,.log_reset{
+	float: right;
+}
+.rgst_reset>button>label,.log_reset>button>label{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.other{
+	margin-top: 30px;
+}
+.other .icon{
+	width: 280px;
+	height: 50px;
+}
+.icon ul li{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+}
+.icon ul li:first-child{
+	margin-left: 0px;
+}
+.icon ul li a{
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+.icon ul li:first-child a{
+	background: url(../images/other.jpg) no-repeat 0px -5px;
+	background-size:89px ;
+}
+.icon ul li:first-child a:hover{
+	background: url(../images/other.jpg) no-repeat -41px -5px;
+	background-size:89px ;
+}
+.icon ul li:nth-child(2) a{
+	background: url(../images/other.jpg) no-repeat 0px -46px;
+	background-size:89px ;
+}
+.icon ul li:nth-child(2) a:hover{
+	background: url(../images/other.jpg) no-repeat -41px -46px;
+	background-size:89px ;
+}
+.icon ul li:nth-child(3) a{
+	background: url(../images/other.jpg) no-repeat 0px -89px;
+	background-size:89px ;
+}
+.icon ul li:nth-child(3) a:hover{
+	background: url(../images/other.jpg) no-repeat -41px -89px;
+	background-size:89px ;
+}
+.icon ul li:last-child a{
+	background: url(../images/other.jpg) no-repeat 0px -129px;
+	background-size:89px ;
+}
+.icon ul li:last-child a:hover{
+	background: url(../images/other.jpg) no-repeat -41px -129px;
+	background-size:89px ;
+}
+.banner{
+	position: relative;
+	padding-top: 50px;
+	width: 100%;
+	height: 400px;
+	background: #2B2B29;
+	overflow: hidden;
+	background-image:linear-gradient(to right,#1a1a18, #2B2B29 30%,#3c3c40,#7E756C);
+}
+.banImg img{
+	/*margin: 0 auto;*/
+	height: 100%;
+	/*width: 100%;*/
+}
+.banImg ul li{
+	/*position: relative;*/
+	/*display: block;*/
+}
+.odinTro{
+	position: absolute;	
+	top:200px;
+	width: 100%;
+	/*height: 150px;*/
+	overflow: hidden;
+}
+.odinTro .container .btn{
+	margin-bottom: 50px;
+}
+.odinTro ul li{
+	color: white;
+	margin-bottom: 50px;
+}
+.order{
+	position: absolute;
+	bottom: 0;
+	left:50%;
+}
+.order ol{
+	display: flex;
+	flex-direction: row;
+	background: #2B2B29;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.order ol li{
+	cursor: pointer;
+	display: block;
+	margin: 5px;
+	width: 20px;
+	height: 20px;
+	border: 10px solid rgba(255,255,255,0.7);
+	border-radius: 50%;
+}
+.order ol li.active{
+	border: none;
+	background-image: url(../images/order.png);
+	
+}
+.sdy_pad{
+	margin: 0 auto;
+	/*height: 100%;*/
+	/*margin-left: 400px;*/
+	padding-top: 30px;
+	margin-bottom: 30px;
+	color: inherit;
+	padding-bottom: 50px;
+}
+.sdy_pad h1{
+	color: white;
+}
+.sdy_pad>p{
+	margin-bottom: 15px;
+	font-size: 21px;
+	font-weight: 200;
+}
+.sdy_container{
+	display: flex;
+	flex-direction: row;
+	/*height: 500px;*/
+	margin: 10px auto;
+	margin-left: 300px;
+}
+.sdy_main{
+	width: 1000px;
+	/*float: left;*/
+	/*margin-left: 200px;*/
+}
+.sdy_nav{
+	padding-left: 0px;
+}
+.right_container{
+	/*float:left;*/
+	width: 500px;
+	/*margin-right: 200px;*/
+}
+.sdy_download{
+
+	/*width: 300px;*/
+	/*height: 300px;*/
+	/*background-color: #00619A;*/
+	float: left;
+}
+.pagination li a.active{
+	/*color:@success;*/
+	font-weight: bold;
+	background-color: rgb(237,237,237);
+	border:none;
+}
+.sdy-play{
+	float: right;
+	margin-right: 20px;
+}
+.userInfo{
+	/*float: right;*/
+}
+.logolist li img{
+	width: 60px;
+	height: 60px;
+}
+.mainpad{
+	padding-top: 50px;
+}
+.guide{
+	width: ;
+	/*background:#000000;*/
+	/*float:left;*/
+}
+
+.box {
+	position:fixed;
+	top:0;
+	left:-110px;
+	z-index:9999;
+	width:140px;
+	cursor:pointer;
+	margin:150px 0 0 0;
+}
+.box a {
+	display:block;
+	position:relative;
+	height:30px;
+	line-height:30px;
+	margin-bottom:2px;
+	background:#fff;
+	padding-left:10px;
+	width:140px;
+	overflow:hidden;
+	color:#333;
+	cursor:pointer;
+	/*right:-110px;*/
+}
+.box a:hover {
+	text-decoration:none;
+	color:#1974A1;
+}
+.box a:hover span {
+	background:#5FA429;
+}
+.box a span {
+	display:block;
+	float:right;
+	width:40px;
+	background:#2B2B29;
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+	margin-left:10px;
+	font-style:normal;
+}
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+#footer .container{
+
+	
+	width:1400px !important;
+}
+.range{
+	width: 80%;
+	margin: 0 auto;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	overflow: auto;
+	display: flex;
+	flex-direction: row;	
+	margin-bottom: 50px;
+}
+.range_last{
+	/*IE（低版本IE）本来是不支持inline-block的，所以在IE中对内联元素使用display:inline-block，理论上IE是不识别的，但使用display:inline-block在IE下会触发layout，从而使内联元素拥有了display:inline-block属性的表象。*/
+	/*display: inline;*/
+	width: 100%;
+	height: 530px;
+	/*background: #2B2B29;*/
+	/*margin-right: 15px;*/
+	/*background-color: #16A085;*/
+}
+.range_title{
+	width: 100%;
+	padding: 30px 10px;
+	background: #ccc;
+}
+.range_title label{
+	font-size: 20px;
+}
+.range_title label{
+	color:#fff;
+}
+.range_table{
+	margin-top: 5px;
+	padding: 0 10px;
+}
+.sdy_download{
+	margin-left: 10px;
+}
+.download_container{
+	width: 250px;
+	height: 150px;
+	border: 2px solid #31708F;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+.sourcename{
+	font-size: 15px;
+	font-weight: none;
+	margin: 10px 5px;
+}
+.sdy_intro{
+	font-size: 16px;
+	padding: 0 5px;
+	margin: 10px auto;
+}
+.sdy_intro label{
+	font-size: 20px;
+	font-weight: bold;
+}
+.start{
+	display: flex;
+	flex-direction: row;
+}
+.start p{
+	display: inline-block;
+}
+div.panel-heading{
+	cursor: pointer;
+	text-align: center;
+}
+a.panel-title{
+	display: block;
+	line-height: 100%;
+	width: 100%;
+	text-decoration: none;
+}

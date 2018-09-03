@@ -1,0 +1,43 @@
+#Bt{
+	background:#0ae8770f;
+    border-bottom: 1px solid #c9aa5f;
+}
+#Bt h1{
+	display: inline-block;
+}
+.thumbnail img{
+	max-width: 36%;
+	margin-top: 20px;
+}
+.btn-primary{
+	background:#33b79f99;
+	border-color: white;
+}
+.change{
+	width: 100%;
+	height: 30px;
+}
+.change-left{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/changeleft.png);
+}
+.change-right{
+	float: right;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/changeright.png);
+}
+.adduser{
+	position: relative;
+	margin-top: -160px;
+	margin-left: 1070px;
+	z-index: 1;
+	width: 32%;
+	height: 400px;
+	background-color: lightblue;
+}
+.btn-default{
+	margin-top: 7px;
+}

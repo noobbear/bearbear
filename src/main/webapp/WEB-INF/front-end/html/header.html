@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div class="header">
+		<div class="hdcontain">
+			<div class="h_nav">
+				<img src="/images/logo.png" alt="logo" /> <label>BearBear<span>.web</span></label>
+			</div>
+			<div class="main_nav">
+				<ul>
+					<li><a href="/jsp/index">主页</a></li>
+					<li><a href="/question/index">题库</a></li>
+					<li><a href="javascript:;">知识库</a></li>
+					<li><a href="/html/about.html">关于我们</a></li>
+				</ul>
+
+			</div>
+			<div id="Islogin" class="userInfo">
+				<!--未登录时 显示登录按钮 否则隐藏-->
+				<!--jQuery显示操作 show() 隐藏 hide()-->
+				<div class="loginBtn" id="unlogin">
+					<a href="/jsp/login">登录<label>&nbsp;</label></a> <label><img
+						src="/images/bg_2.png" /></label> <a href="/jsp/register"><label>&nbsp;</label>注册</a>
+				</div>
+				<div id="logined" class="lgInfo">
+					<div id="userImg">
+						<a href="/jsp/userInfo"><img src="/images/default.jpg" id="icon"/></a>
+					</div>
+					<label><a href="/jsp/userInfo"></a></label>
+					<a id="cancel" class="btn btn-danger" href="/login/logout" style="margin-left: 10px;">注销</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$("#logined").hide();
+	$("#unlogin").show();
+	$.ajax({
+		async : "false",
+		url : "/login/loginUser",
+		dataType : "json",
+		type : "post",
+		success : function(json) {
+			if (json != null) {
+				$("#unlogin").hide();
+				$("#logined").show();
+				$("#logined label a").html(json.username);
+				$('#icon').attr('src',json.icon);
+			} else {
+				$("#logined").hide();
+				$("#unlogin").show();
+			}
+		}
+	});
+</script>
+</html>
